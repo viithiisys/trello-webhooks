@@ -27,19 +27,19 @@
   "logoutSessionsOnSensitiveChanges": true,
 
 "trelloLists": {
-    "Fresher":"596489ce1e5e175b0f4baf59",   
-    "1 Year":"596489daa58c00dd0e8e9097",   
-    "1+ Year":"596489e31bc6ef5b970a05f3",   
-    "2+ Year":"596489f3b8b02f202cc84116",   
-    "3+ Year":"596489fe051f520dc17acd13",   
-    "4+ Year":"59648a1d2c16e87a7d24f99f",   
-    "5+ Year":"59648a29cddfc63a6b3e781d",   
-    "6+ Year":"59648a330827705bab1dae19"
+    "Fresher":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "1 Year":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "1+ Year":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "2+ Year":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "3+ Year":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "4+ Year":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "5+ Year":"xxxxxxxxxxxxxxxxxxxxxxx",   
+    "6+ Year":"xxxxxxxxxxxxxxxxxxxxxxx"
   },
   "trelloLables": {
-    "Node":"596474971314a3399991418d",
-    "Java":"596474971314a33999914190",
-    "Angular":"596474971314a3399991418e"
+    "Node":"xxxxxxxxxxxxxxxxxxxxxxx",
+    "Java":"xxxxxxxxxxxxxxxxxxxxxxx",
+    "Angular":"xxxxxxxxxxxxxxxxxxxxxxx"
   },
-  "trelloBoardId":"59647497e9c02fa438b503c4"
+  "trelloBoardId":"xxxxxxxxxxxxxxxxxxxxxxx"
 }

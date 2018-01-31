@@ -24,8 +24,8 @@ app.start = function() {
 
     // Receive email and Send to Trello Board
     var imap = {
-        user: "test@viithiisys.com",
-        password: "password!@#",
+        user: "XXXX@xxxxx.com",
+        password: "xxxxxxx!xx#",
         host: "imap.gmail.com",
         port: 993,
         tls: true,
@@ -39,10 +39,10 @@ app.start = function() {
     var connection = mysql.createConnection({
       "host": "localhost",
       "port": 3306,
-      "name": "db",
-      "user": "myapp_test",
-      "password": "password",
-      "database": "myapp_test"
+      "name": "xx",
+      "user": "xxxxx",
+      "password": "xxxxx",
+      "database": "xxxxx"
     })
 
     connection.connect(function(err) {
@@ -56,7 +56,7 @@ app.start = function() {
       var sql = 'SELECT * FROM applicant WHERE email ='+ "'"+mail.from[0].address+"'";  
       connection.query(sql, function(err, results) {
         if (err) throw err
-        var t = new Trello("1c29b6cdf715fa4a6839fa8d615cd5f1", "d5f7e14d1571518a62b0f82767c8603ad7aae6814b98ad2734bf4f9855dcb3b9");
+        var t = new Trello("xxxx", "xxxxx");
           t.post("/1/cards/"+ results[0].cardId + "/actions/comments", {"text": mail.text }, function(err, data) {
             console.log(results[0].cardId);
           })

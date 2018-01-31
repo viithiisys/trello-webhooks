@@ -10,10 +10,10 @@ var nodemailer = require('nodemailer');
 var connection = mysql.createConnection({
     "host": "localhost",
     "port": 3306,
-    "name": "db",
-    "user": "myapp_test",
-    "password": "password",
-    "database": "myapp_test"
+    "name": "xx",
+    "user": "xxxxxxxxx",
+    "password": "xxxxxxxxxx",
+    "database": "xxxxxxxxxxxxx"
 })
 
 connection.connect(function(err) {
@@ -22,7 +22,7 @@ connection.connect(function(err) {
 
 var trello = {
     trelloDevice: function(req, res) {
-        var t = new Trello("1c29b6cdf715fa4a6839fa8d615cd5f1", "d5f7e14d1571518a62b0f82767c8603ad7aae6814b98ad2734bf4f9855dcb3b9");
+        var t = new Trello("xxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         var variableDetails = {
             name: req.body.name,
             email: req.body.email,
@@ -57,11 +57,10 @@ var trello = {
             })
             // Implement webhook
             request.post({
-                url: "https://api.trello.com/1/tokens/d5f7e14d1571518a62b0f82767c8603ad7aae6814b98ad2734bf4f9855dcb3b9/webhooks/?key=1c29b6cdf715fa4a6839fa8d615cd5f1",
+                url: "https://api.trello.com/1/tokens/xxxxxxxxxxxxxxxxxxxxxxxxx/webhooks/?key=xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                 form: {
                     description: req.body.name,
-                    //callbackURL: "https://d1a04f2b.ngrok.io/gets",
-                    callbackURL: "139.59.68.74:2000/gets",
+                    callbackURL: "xxx.xx.xx.xx:xxxx/xxxx",
                     idModel: data.id,
                 }
             }, function(error, response, body) {
@@ -91,12 +90,12 @@ var trello = {
                 var transporter = nodemailer.createTransport({
                     service : 'gmail',
                     auth: {
-                            user: 'test@viithiisys.com',
-                            pass: 'password!@#'
+                            user: 'xxxx@xxxxxxxxxxx.xxxxx',
+                            pass: 'xxxxxxxxxxxxxxxxxx'
                             }
                     })
                     var mailOptions = {
-                        from: 'test@viithiisys.com', // sender address
+                        from: 'xxxx@xxxxxxxxxxxx.xxxxx', // sender address
                         to: results[0].email, // list of receivers
                         subject: 'trello', // Subject line
                         html: initialReq.body.action.data.text // html body
